@@ -1,0 +1,92 @@
+PODS:
+  - Alamofire (5.2.1)
+  - DBDebugToolkit (0.5.2)
+  - DITranquillity (3.7.2):
+    - SwiftLazy
+  - IQKeyboardManagerSwift (6.5.5)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - MaterialComponents/ActivityIndicator (110.1.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 2.0)
+  - MaterialComponents/Palettes (110.1.0)
+  - MaterialComponents/private/Application (110.1.0)
+  - MaterialTextField (1.0.1)
+  - MDFInternationalization (2.0.0)
+  - MotionAnimator (2.8.1):
+    - MotionInterchange (~> 1.6)
+  - MotionInterchange (1.6.0)
+  - OAuthSwift (2.1.0)
+  - p2.OAuth2 (5.0.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - RxNetworkApiClient (0.1.3):
+    - RxSwift
+    - SwiftyJSON
+  - RxSwift (5.1.1)
+  - SwiftLazy (1.1.7)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - DBDebugToolkit
+  - DITranquillity (~> 3.7.1)
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MaterialComponents/ActivityIndicator
+  - MaterialTextField (~> 1.0)
+  - OAuthSwift
+  - p2.OAuth2
+  - R.swift (~> 5.0.3)
+  - RxNetworkApiClient
+  - RxSwift (~> 5)
+  - SwiftyJSON (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DBDebugToolkit
+    - DITranquillity
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MaterialComponents
+    - MaterialTextField
+    - MDFInternationalization
+    - MotionAnimator
+    - MotionInterchange
+    - OAuthSwift
+    - p2.OAuth2
+    - R.swift
+    - R.swift.Library
+    - RxNetworkApiClient
+    - RxSwift
+    - SwiftLazy
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  DBDebugToolkit: b146dfb5fd94b2c57a40ffd173419b6fe5996b66
+  DITranquillity: eac3d90c40150159049e2d109d4108ee5ba5da18
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  MaterialComponents: 4cb6659322cfc38bb0a7e40fba1866daaefeb12c
+  MaterialTextField: f1a0786588e4d3610cb9bb62d2adbe9777cebbf9
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
+  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
+  OAuthSwift: ab1675598273e04355e0282459c328e65c9ddacd
+  p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxNetworkApiClient: 5d6705de5c83b01a400e89f431122d75412b5e41
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftLazy: dcb1edc6c2b633ba2e68f28554d9dd6d1c0bfd13
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 48f5d607735101bccfe6871f61dc496b8c6cb9b1
+
+COCOAPODS: 1.9.3

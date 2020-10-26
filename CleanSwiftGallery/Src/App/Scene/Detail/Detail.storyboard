@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="4HS-IC-lWo">
+            <objects>
+                <viewController storyboardIdentifier="detailStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ujI-cg-Snh" customClass="DetailViewController" customModule="CleanSwiftGallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MRK-SH-egt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AE3-Ka-CBf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="291.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="imb-Al-vSY"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-4J-2cp">
+                                <rect key="frame" x="20" y="378" width="374" height="195"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="5Rq-Cc-ilh"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.20.2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXx-BT-5bE">
+                                <rect key="frame" x="333.5" y="350.5" width="60.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07K-Kf-qd6">
+                                <rect key="frame" x="24" y="346.5" width="56.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="07K-Kf-qd6" firstAttribute="leading" secondItem="YM3-mg-ylc" secondAttribute="leading" constant="24" id="2xC-9m-W61"/>
+                            <constraint firstItem="lXx-BT-5bE" firstAttribute="top" secondItem="AE3-Ka-CBf" secondAttribute="bottom" constant="15" id="8GZ-yW-hFg"/>
+                            <constraint firstItem="AE3-Ka-CBf" firstAttribute="trailing" secondItem="YM3-mg-ylc" secondAttribute="trailing" id="9FG-9A-Cth"/>
+                            <constraint firstItem="AE3-Ka-CBf" firstAttribute="leading" secondItem="YM3-mg-ylc" secondAttribute="leading" id="BAp-FU-1oX"/>
+                            <constraint firstItem="YM3-mg-ylc" firstAttribute="trailing" secondItem="lXx-BT-5bE" secondAttribute="trailing" constant="20" id="DNN-xU-dqm"/>
+                            <constraint firstItem="lV7-4J-2cp" firstAttribute="top" secondItem="lXx-BT-5bE" secondAttribute="bottom" constant="12" id="ETA-OP-yxW"/>
+                            <constraint firstItem="YM3-mg-ylc" firstAttribute="bottom" secondItem="lV7-4J-2cp" secondAttribute="bottom" constant="289" id="Fyj-0N-IQX"/>
+                            <constraint firstItem="AE3-Ka-CBf" firstAttribute="trailing" secondItem="YM3-mg-ylc" secondAttribute="trailing" id="IUx-3L-EJC"/>
+                            <constraint firstItem="AE3-Ka-CBf" firstAttribute="top" secondItem="YM3-mg-ylc" secondAttribute="top" id="J6j-PF-jGJ"/>
+                            <constraint firstItem="AE3-Ka-CBf" firstAttribute="leading" secondItem="YM3-mg-ylc" secondAttribute="leading" id="VSm-Jk-sM9"/>
+                            <constraint firstItem="lXx-BT-5bE" firstAttribute="leading" relation="lessThanOrEqual" secondItem="07K-Kf-qd6" secondAttribute="trailing" constant="253" id="dXN-hx-azq"/>
+                            <constraint firstItem="lV7-4J-2cp" firstAttribute="leading" secondItem="YM3-mg-ylc" secondAttribute="leading" constant="20" id="h2b-au-pbm"/>
+                            <constraint firstItem="YM3-mg-ylc" firstAttribute="trailing" secondItem="lV7-4J-2cp" secondAttribute="trailing" constant="20" id="hnb-80-urT"/>
+                            <constraint firstItem="lV7-4J-2cp" firstAttribute="top" secondItem="07K-Kf-qd6" secondAttribute="bottom" constant="8" id="lX2-PH-lU2"/>
+                            <constraint firstItem="07K-Kf-qd6" firstAttribute="top" secondItem="AE3-Ka-CBf" secondAttribute="bottom" constant="11" id="uE0-t7-nJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YM3-mg-ylc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="08L-39-Yiw"/>
+                    <connections>
+                        <outlet property="imageDateCreate" destination="lXx-BT-5bE" id="jO5-RP-oAj"/>
+                        <outlet property="imageDescription" destination="lV7-4J-2cp" id="AKr-fs-jcw"/>
+                        <outlet property="imageName" destination="07K-Kf-qd6" id="pxn-9a-fzK"/>
+                        <outlet property="imageView" destination="AE3-Ka-CBf" id="hgb-c3-yWA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Rj-gB-2G6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2479.7101449275365" y="2882.8125"/>
+        </scene>
+    </scenes>
+</document>

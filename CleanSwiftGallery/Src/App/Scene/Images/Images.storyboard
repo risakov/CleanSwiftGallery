@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gallery-->
+        <scene sceneID="feQ-ec-FLn">
+            <objects>
+                <viewController storyboardIdentifier="imagesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ek-vE-yuL" customClass="ImagesViewController" customModule="CleanSwiftGallery" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oa7-wx-YDD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9JT-Hu-AzF">
+                                <rect key="frame" x="20" y="83" width="374" height="761"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VKP-2y-kUA">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="imageCell" reuseIdentifier="imageCell" id="Ywe-ij-dUX" customClass="ImageCell" customModule="CleanSwiftGallery">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WI3-Cd-VcC">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-TV-fxt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="0IB-QN-kFs"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="RzW-U1-U4Z"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rcd-TV-fxt" firstAttribute="leading" secondItem="WI3-Cd-VcC" secondAttribute="leading" id="LrE-Ki-QTt"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rcd-TV-fxt" secondAttribute="trailing" id="MA0-5d-0b8"/>
+                                                <constraint firstItem="Rcd-TV-fxt" firstAttribute="top" secondItem="WI3-Cd-VcC" secondAttribute="top" id="WJ5-U3-MJQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rcd-TV-fxt" secondAttribute="bottom" id="Y1B-Av-zIe"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="180" height="180"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="Rcd-TV-fxt" id="Tt6-bg-3lF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VOv-6X-nYl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="New"/>
+                                    <segment title="Popular"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="changeSegment:" destination="6Ek-vE-yuL" eventType="valueChanged" id="CXe-UR-iU7"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VOv-6X-nYl" firstAttribute="top" secondItem="dMg-dq-bFe" secondAttribute="top" id="AUa-7d-5gk"/>
+                            <constraint firstItem="9JT-Hu-AzF" firstAttribute="leading" secondItem="dMg-dq-bFe" secondAttribute="leading" constant="20" id="ICO-wT-CrV"/>
+                            <constraint firstItem="VOv-6X-nYl" firstAttribute="leading" secondItem="dMg-dq-bFe" secondAttribute="leading" id="YJ0-Tl-wvP"/>
+                            <constraint firstItem="dMg-dq-bFe" firstAttribute="trailing" secondItem="9JT-Hu-AzF" secondAttribute="trailing" constant="20" id="m3I-QL-vhh"/>
+                            <constraint firstItem="VOv-6X-nYl" firstAttribute="trailing" secondItem="dMg-dq-bFe" secondAttribute="trailing" id="pga-Wz-vFB"/>
+                            <constraint firstItem="dMg-dq-bFe" firstAttribute="bottom" secondItem="9JT-Hu-AzF" secondAttribute="bottom" constant="18" id="r9u-Jb-Ybu"/>
+                            <constraint firstItem="9JT-Hu-AzF" firstAttribute="top" secondItem="VOv-6X-nYl" secondAttribute="bottom" constant="8" id="wYt-bo-PaD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dMg-dq-bFe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gallery" id="Iji-9H-beI"/>
+                    <connections>
+                        <outlet property="collectionView" destination="9JT-Hu-AzF" id="pnv-6h-fJm"/>
+                        <outlet property="newPopularSegmentedControl" destination="VOv-6X-nYl" id="pV3-OV-di2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDH-2o-KZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.1014492753625" y="2010.9375"/>
+        </scene>
+    </scenes>
+</document>
